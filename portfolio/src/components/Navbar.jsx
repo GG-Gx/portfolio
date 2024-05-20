@@ -9,11 +9,14 @@ const Navbar = () => {
 
     <Box  p={4} 
     borderRadius={23}
+    position={"fixed"}
     justifyContent="center"
     alignItems="center"
     display="flex"
     marginTop={-10}
-
+    width={"100%"}
+    scrollBehavior={"smooth"}
+    
     >
       <Flex >
         <Box p="2">
