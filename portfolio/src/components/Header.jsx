@@ -38,12 +38,41 @@ const Header = () => {
         boxSize='80px'
         objectFit={"cover"}
         />
-        <Button  variant="outline"  borderRadius={23}
-          colorScheme='green'
-          height='30px'
+        <Box
+        className="fancy"
+        display={"flex"}
+        flexDirection={"column"}
+        justifyContent={"center"}
+        alignItems={"center"}
+        gap={3}
+        alignSelf={"center"}
 
 
-        >open to work</Button>
+        >
+          
+        <Button 
+        className="fancy-text"
+        borderRadius={23}
+        height='30px'
+        colorScheme="green.500"
+        color={"black"}
+        justifyContent={"center"}
+      
+        alignSelf={"center"}
+        
+
+        
+
+        >
+        <Link href="https://www.linkedin.com/in/german-gabriel-garcia-400515119/" isExternal 
+        style={{ textDecoration: 'none' }}
+        >
+        open to work
+        </Link>
+
+        </Button>
+        
+        </Box>
         </Box>
         <Spacer />
         <Box
@@ -60,7 +89,7 @@ const Header = () => {
           gap={3}
 
 
-          >Hi :) , I'm Germán</Heading>
+          >Hello,  I'm Germán</Heading>
           <Text fontSize="md"
           alignSelf={"flex-start"}
           margin={0}
@@ -85,6 +114,8 @@ const Header = () => {
           <Button colorScheme="teal" variant="outline"
           borderRadius={23}
           height='30px'
+          
+            
           >Linkedin</Button>
           </Box>
 
