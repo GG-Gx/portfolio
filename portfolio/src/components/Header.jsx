@@ -1,12 +1,17 @@
 import React from "react";
 import { Box, Flex, Spacer, Text, Heading, Img, Button} from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
-
+import { Image } from "@chakra-ui/react";
+import { ReactSVG } from 'react-svg';
 
 
 
 const Header = () => {
   return (
+
+
+ 
+
     
     <Box  p={4}
     display="flex"
@@ -33,10 +38,13 @@ const Header = () => {
         gap={3}
         alignSelf={"flex-start"}
         >
-        <Img src='https://scontent-ber1-1.xx.fbcdn.net/v/t39.30808-6/343121592_574560228103568_3077254718671390705_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=w3J3eE9KFJsQ7kNvgG-BIG_&_nc_ht=scontent-ber1-1.xx&oh=00_AYBX5G-2IZYadm4QEE5b5S45b4I-NS-RnX4xWLN7RcMsZQ&oe=66510193'
+        <Image src=".\public\IMG-20240518-WA0008.jpg"
+        fallbackSrc="https://via.placeholder.com/80"
         borderRadius='full'
         boxSize='80px'
         objectFit={"cover"}
+        alt="Germán Gabriel García"
+
         />
         <Box
         className="fancy"
@@ -57,12 +65,7 @@ const Header = () => {
         colorScheme="green.500"
         color={"black"}
         justifyContent={"center"}
-      
         alignSelf={"center"}
-        
-
-        
-
         >
         <Link href="https://www.linkedin.com/in/german-gabriel-garcia-400515119/" isExternal 
         style={{ textDecoration: 'none' }}
@@ -99,24 +102,55 @@ const Header = () => {
           </Box>
           <Spacer />
           <Box
-
           display='flex'
-          
           alignSelf={"flex-start"}
           gap={3}
           >
-          <Button colorScheme="teal" variant="outline"
+            <Link href="mailto: garciagermangabriel@gmail.com" isExternal
+          style={{ textDecoration: 'none' }}
+          >
+          <Button colorScheme="purple" variant="outline"
           borderRadius={23}
+          height='35px'
+          >
+          <Image
+          src=".\public\mail-forward.svg" 
+          boxSize="15px"
+          objectFit="cover"
+          alt="Linkedin"
+          marginRight={1}
+          justifyContent={"center"}
+          alignSelf={"center"}
+          alignContent={"center"}
+          className="svg-icon-header"
+          />
+          Contact me
+          
+          </Button>
+          </Link>
+          <Spacer />
 
-          height='30px'
-          
-          >Contact me</Button>
-          <Button colorScheme="teal" variant="outline"
+          <Link href="https://www.linkedin.com/in/german-gabriel-garcia-400515119/" isExternal
+          style={{ textDecoration: 'none' }}
+          >
+          <Button colorScheme="purple" variant="outline"
           borderRadius={23}
-          height='30px'
-          
-            
-          >Linkedin</Button>
+          height='35px'
+          >
+            <Image
+          src=".\public\brand-linkedin.svg" 
+          boxSize="15px"
+          objectFit="cover"
+          alt="Contact me"
+          marginRight={1}
+          justifyContent={"center"}
+          alignSelf={"center"}
+          alignContent={"center"}
+          className="svg-icon-header"
+          />
+          Linkedin
+          </Button>
+          </Link>
           </Box>
 
       </Flex>

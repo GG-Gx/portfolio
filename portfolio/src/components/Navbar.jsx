@@ -65,11 +65,22 @@ const Navbar = () => {
         bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "white"}
         backdropFilter={isScrolled ? "blur(10px)" : "none"} // Apply backdrop blur on scroll
         >
-          <Link href="#">Experience </Link>
-          <Link href="#">Projects </Link>
-          <Link href="#">About </Link>
-          <Link href="#">Contact </Link>
-          <MoonIcon />
+          <Link href="#"
+          style={{ textDecoration: 'none' }}
+          _hover={{ color: "purple.500" }}
+          >Experience </Link>
+          <Link href="#"
+          style={{ textDecoration: 'none' }}
+          _hover={{ color: "purple.500" }}
+          >Projects </Link>
+          <Link href="#"
+          style={{ textDecoration: 'none' }}
+          _hover={{ color: "purple.500" }}
+          >About </Link>
+          <Link href="#"
+          style={{ textDecoration: 'none' }}
+          _hover={{ color: "purple.500" }}
+          >Contact </Link>
         </Box>
       </Flex>
       </Center>
