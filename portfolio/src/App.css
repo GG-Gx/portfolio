@@ -12,12 +12,26 @@
   height: 100%;
   max-width: 100%;
   overflow: hidden;
+  font-display: swap;
+
+
 }
 
 /* Default styles for larger screens */
 #root {
-  background-image: radial-gradient(100% 125% at 50% 10%, #fff 30%, rgb(207, 51, 238) 100%);
+  background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
   background-size: cover;
+}
+
+/* Default styles for smaller screens */
+@media (max-width: 600px) {
+  #root {
+    background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
+    background-size: cover;
+    justify-content: center !important;
+    
+    
+  }
 }
 
 

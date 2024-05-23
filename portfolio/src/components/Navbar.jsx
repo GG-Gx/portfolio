@@ -38,8 +38,12 @@ const Navbar = () => {
   return (
 
 
-
-    <Box  p={4} 
+    <Center
+    paddingTop={2}
+   
+   
+    >
+    <Box  p={4}
     position={"fixed"}
     justifyContent="center"
     alignItems="center"
@@ -53,11 +57,10 @@ const Navbar = () => {
     >
       <Flex 
              width={"100%"}
-             maxWidth="600px"
              align={"center"}
              alignSelf={"center"}
              alignContent={"center"}
-              justifyContent={"center"}
+            justifyContent={"center"}
               mx={"auto"}
 
              margin="0 auto"  
@@ -77,8 +80,8 @@ const Navbar = () => {
         height="5px"
 
         borderRadius={23}
-        bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "white"}
-        backdropFilter={isScrolled ? "blur(10px)" : "none"} // Apply backdrop blur on scroll
+        bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "transparent"}
+        backdropFilter={isScrolled ? "blur(15px)" : "none"} // Apply backdrop blur on scroll
         >
           <Link href="#experience"
            onClick={(e) => handleSmoothScroll("experience", e)}
@@ -105,6 +108,7 @@ const Navbar = () => {
         </Box>
       </Flex>
     </Box>
+    </Center>
   );
 };
 

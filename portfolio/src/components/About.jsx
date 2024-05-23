@@ -37,7 +37,7 @@ const About = () => {
         alignSelf={"flex-start"}
         flexGrow={1}
         >
-         <Heading as="h1" size="xl"
+         <Heading as="h1" 
           display={"flex"}
           flexDirection={"row"}
           justifyContent={"center"}
@@ -49,7 +49,6 @@ const About = () => {
 
           >
           <Image src=".\public\user.svg" 
-          boxSize="30px"
           objectFit="cover"
           alt="Briefcase"
           alignItems={"center"}
@@ -82,7 +81,7 @@ const About = () => {
           <Text fontSize="md"
           alignSelf={"flex-start"}
           margin={0}
-          maxWidth={"500px"}
+          maxWidth={"50vw"}
           textAlign={"left"}
           >My name is Germán Gabriel García, and I am originally from Argentina but currently residing in Berlin. As a musician, I developed a solo project that combines trumpet performance with audio processing and generative audio-reactive visuals, requiring extensive programming skills.
 

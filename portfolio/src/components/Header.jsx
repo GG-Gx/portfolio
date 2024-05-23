@@ -25,6 +25,10 @@ const Header = () => {
     display="flex"
     flexDirection={"column"}
     justifyContent="center"
+    id="header"
+    pt = {{ base: "10%", md: "8%" }}
+
+
   
     >
       <Flex
@@ -34,7 +38,6 @@ const Header = () => {
       justifyContent={"left"}
       mx={"auto"}
       paddingTop="8%"
-      id="header"
       maxWidth={"7x1"}
 
 
@@ -93,17 +96,18 @@ const Header = () => {
         alignSelf={"flex-start"}
 
         >
-          <Heading as="h1" size="xl"
+          <Heading as="h1" 
+          size={"xl"}
           alignSelf={"flex-start"}
           gap={3}
-
-
+          maxWidth={"50vw"}
           >Hello,  I'm Germán</Heading>
           <Text fontSize="md"
           alignSelf={"flex-start"}
           margin={0}
-          maxWidth={"500px"}
+          maxWidth={"50vw"}
           textAlign={"left"}
+          
           >Enthusiastic junior web developer with a passion for creating dynamic and responsive web applications. Recently completed an intensive bootcamp focused on full-stack development, where I built a comprehensive final project using the MERN stack (MongoDB, Express.js, React, Node.js). Eager to bring my skills in JavaScript, React, and Node.js to a growing tech team.</Text>
           </Box>
           <Spacer />
