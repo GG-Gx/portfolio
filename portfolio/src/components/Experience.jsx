@@ -22,6 +22,8 @@ const Experience = () => {
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"left"}
+      mx={"auto"}
+
        >
       
         <Box

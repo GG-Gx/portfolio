@@ -25,18 +25,18 @@ const Header = () => {
     display="flex"
     flexDirection={"column"}
     justifyContent="center"
-    alignItems="center"
-    paddingTop="8%"
-    id="header"
-
-
+  
     >
       <Flex
       minWidth='max-content' alignItems='center' gap='2'
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"left"}
-      
+      mx={"auto"}
+      paddingTop="8%"
+      id="header"
+      maxWidth={"7x1"}
+
 
        >
         <Box
@@ -46,6 +46,7 @@ const Header = () => {
         alignItems={"center"}
         gap={3}
         alignSelf={"flex-start"}
+        flexShrink={0}
         >
         <Image src=".\public\IMG-20240518-WA0008.jpg"
         fallbackSrc="https://via.placeholder.com/80"

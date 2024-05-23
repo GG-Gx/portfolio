@@ -14,6 +14,8 @@ const Footer = () => {
       alignSelf={"center"}
       marginTop={10}
       marginBottom={-5}
+      mx={"auto"}
+
       >© 2024 made with love by GGG</Text>
     </footer>
   );

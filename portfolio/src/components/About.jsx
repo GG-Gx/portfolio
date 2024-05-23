@@ -23,6 +23,8 @@ const About = () => {
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"left"}
+      mx={"auto"}
+      
       
 
        >
@@ -33,6 +35,7 @@ const About = () => {
         alignItems={"center"}
         gap={3}
         alignSelf={"flex-start"}
+        flexGrow={1}
         >
          <Heading as="h1" size="xl"
           display={"flex"}

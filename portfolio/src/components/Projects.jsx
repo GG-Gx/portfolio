@@ -23,6 +23,8 @@ const Projects = () => {
       display={"flex"}
       flexDirection={"column"}
       justifyContent={"left"}
+      mx={"auto"}
+
        >
   
         <Box

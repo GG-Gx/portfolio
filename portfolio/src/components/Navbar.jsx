@@ -47,16 +47,19 @@ const Navbar = () => {
     marginTop={-8}
     width={"100%"}
     zIndex={10}
-    
-
+    flexWrap={"wrap"}
   
 
     >
-      <Center>
       <Flex 
              width={"100%"}
              maxWidth="600px"
-       
+             align={"center"}
+             alignSelf={"center"}
+             alignContent={"center"}
+              justifyContent={"center"}
+              mx={"auto"}
+
              margin="0 auto"  
       >
         <Box p="2"
@@ -70,8 +73,9 @@ const Navbar = () => {
         boxShadow={isScrolled ? "md" : "none"}
         transition="box-shadow 0.3s"
         zIndex={10}
-        h="35px"
         padding={4}
+        height="5px"
+
         borderRadius={23}
         bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "white"}
         backdropFilter={isScrolled ? "blur(10px)" : "none"} // Apply backdrop blur on scroll
@@ -100,7 +104,6 @@ const Navbar = () => {
           >Contact </Link>
         </Box>
       </Flex>
-      </Center>
     </Box>
   );
 };
