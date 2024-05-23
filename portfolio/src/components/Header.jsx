@@ -7,6 +7,14 @@ import { ReactSVG } from 'react-svg';
 
 
 const Header = () => {
+
+  const handleMailTo = (e) => {
+    e.preventDefault();
+    window.location.href = "mailto:garciagermangabriel@gmail.com";
+  };
+
+
+
   return (
 
 
@@ -19,6 +27,7 @@ const Header = () => {
     justifyContent="center"
     alignItems="center"
     paddingTop="8%"
+    id="header"
 
 
     >
@@ -44,7 +53,7 @@ const Header = () => {
         boxSize='80px'
         objectFit={"cover"}
         alt="Germán Gabriel García"
-
+       
         />
         <Box
         className="fancy"
@@ -66,13 +75,9 @@ const Header = () => {
         color={"black"}
         justifyContent={"center"}
         alignSelf={"center"}
-        >
-        <Link href="https://www.linkedin.com/in/german-gabriel-garcia-400515119/" isExternal 
-        style={{ textDecoration: 'none' }}
+        onClick={() => window.open("https://www.linkedin.com/in/german-gabriel-garcia-400515119/")}
         >
         open to work
-        </Link>
-
         </Button>
         
         </Box>
@@ -106,12 +111,13 @@ const Header = () => {
           alignSelf={"flex-start"}
           gap={3}
           >
-            <Link href="mailto: garciagermangabriel@gmail.com" isExternal
-          style={{ textDecoration: 'none' }}
-          >
-          <Button colorScheme="purple" variant="outline"
-          borderRadius={23}
-          height='35px'
+         
+          <Button
+            colorScheme="purple"
+            variant="outline"
+            borderRadius={23}
+            height="35px"
+            onClick={handleMailTo}
           >
           <Image
           src=".\public\mail-forward.svg" 
@@ -127,15 +133,13 @@ const Header = () => {
           Contact me
           
           </Button>
-          </Link>
           <Spacer />
 
-          <Link href="https://www.linkedin.com/in/german-gabriel-garcia-400515119/" isExternal
-          style={{ textDecoration: 'none' }}
-          >
+        
           <Button colorScheme="purple" variant="outline"
           borderRadius={23}
           height='35px'
+          onClick={() => window.open("https://www.linkedin.com/in/german-gabriel-garcia-400515119/")}
           >
             <Image
           src=".\public\brand-linkedin.svg" 
@@ -150,7 +154,6 @@ const Header = () => {
           />
           Linkedin
           </Button>
-          </Link>
           </Box>
 
       </Flex>

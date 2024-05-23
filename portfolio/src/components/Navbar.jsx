@@ -24,6 +24,17 @@ const Navbar = () => {
     };
   }, []);
 
+  const handleSmoothScroll = (targetId, event) => {
+    event.preventDefault();
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({
+        behavior: "smooth",
+        block: "start",
+      });
+    }
+  };
+
   return (
 
 
@@ -65,21 +76,27 @@ const Navbar = () => {
         bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "white"}
         backdropFilter={isScrolled ? "blur(10px)" : "none"} // Apply backdrop blur on scroll
         >
-          <Link href="#"
+          <Link href="#experience"
+           onClick={(e) => handleSmoothScroll("experience", e)}
           style={{ textDecoration: 'none' }}
           _hover={{ color: "purple.500" }}
           >Experience </Link>
-          <Link href="#"
+          <Link href="#projects"
+          onClick={(e) => handleSmoothScroll("projects", e)}
           style={{ textDecoration: 'none' }}
           _hover={{ color: "purple.500" }}
+            
           >Projects </Link>
-          <Link href="#"
+          <Link href="#about"
+          onClick={(e) => handleSmoothScroll("about", e)}
           style={{ textDecoration: 'none' }}
           _hover={{ color: "purple.500" }}
           >About </Link>
-          <Link href="#"
+          <Link href="#header"
           style={{ textDecoration: 'none' }}
           _hover={{ color: "purple.500" }}
+          onClick={(e) => handleSmoothScroll("header", e)}
+          
           >Contact </Link>
         </Box>
       </Flex>

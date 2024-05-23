@@ -4,8 +4,17 @@ import { Box, Flex, Spacer, Text, Heading, Img, List, ListItem, ListIcon, Ordere
 
 const Footer = () => {
   return (
-    <footer>
-      <Text>© 2024 made with love by GGG</Text>
+    <footer
+    >
+      <Text
+      display={"flex"}
+      flexDirection={"row"}
+      justifyContent={"center"}
+      alignItems={"center"}
+      alignSelf={"center"}
+      marginTop={10}
+      marginBottom={-5}
+      >© 2024 made with love by GGG</Text>
     </footer>
   );
 };

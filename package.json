@@ -1,6 +1,8 @@
 {
   "dependencies": {
     "@tabler/icons-react": "^3.5.0",
+    "react-router": "^6.23.1",
+    "react-router-dom": "^6.23.1",
     "react-svg": "^16.1.34"
   }
 }
