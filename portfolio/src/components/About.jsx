@@ -43,7 +43,7 @@ const About = () => {
 
           >
             <Image
-              src="/code.svg"
+              src="/user.svg"
               boxSize="30px"
               objectFit="cover"
               alt="Code"
