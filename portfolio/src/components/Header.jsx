@@ -53,7 +53,7 @@ const Header = () => {
         alignSelf={"flex-start"}
         flexShrink={0}
         >
-        <Image src=".\public\IMG-20240518-WA0008.jpg"
+        <Image src=".\IMG-20240518-WA0008.jpg"
         fallbackSrc="https://via.placeholder.com/80"
         borderRadius='full'
         boxSize='80px'
@@ -140,7 +140,7 @@ const Header = () => {
             
           >
           <Image
-          src=".\public\mail-forward.svg" 
+          src=".\mail-forward.svg" 
           boxSize="15px"
           objectFit="cover"
           alt="Linkedin"
@@ -161,7 +161,7 @@ const Header = () => {
           onClick={() => window.open("https://www.linkedin.com/in/german-gabriel-garcia-400515119/")}
           >
             <Image
-          src=".\public\brand-linkedin.svg" 
+          src=".\brand-linkedin.svg" 
           boxSize="15px"
           objectFit="cover"
           alt="Contact me"

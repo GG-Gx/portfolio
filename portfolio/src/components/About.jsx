@@ -63,7 +63,7 @@ const About = () => {
             flexWrap={"wrap"}
           >
             <Image
-              src=".\public\aka_ggg.mp4 06_12_2022 22_30_09.png"
+              src=".\aka_ggg.mp4 06_12_2022 22_30_09.png"
               width="400px"
               maxWidth={"70vw"}
               height="auto"
