@@ -1,18 +1,18 @@
 import React from "react";
-import { Box, Flex, Text, Heading, Image, UnorderedList, ListItem, Link, Button, Spacer } from "@chakra-ui/react";
+import { Box, Flex, Text, Heading, Image, UnorderedList, ListItem, Link, Button, Spacer, Center } from "@chakra-ui/react";
 
 const Experience = () => {
   return (
+    
     <Box
     p={4}
+
     display="flex"
+    flexWrap={"wrap"}
     flexDirection="column"
     alignItems="flex-start"
     pt="8%"
-    id="projects"
-    margin= "auto"
-    padding= "auto"
-
+    id="experience"
   >
     <Flex
       minWidth="max-content"
@@ -30,11 +30,14 @@ const Experience = () => {
       >
         <Heading
           as="h1"
+          size="xl"
           display="flex"
           flexDirection="row"
           justifyContent="flex-start"
           alignItems="center"
+          marginBottom={4}
           gap={3}
+          paddingTop={2}
         >
           <Image
             src="/briefcase.svg"
@@ -48,54 +51,73 @@ const Experience = () => {
         </Heading>
 
         <Box
-          borderLeft="1px solid"
-          borderColor="gray.300"
+
           pl={5}
           ml={5}
         >
-       
+
           <Heading
             as="h2"
             size="md"
             alignSelf="flex-start"
             marginTop={5}
             textAlign="left"
+            flexWrap={"wrap"}
+            display={"flex"}
             maxWidth={"50vw"}
+
+
           >
             Full Stack Web and App Development
           </Heading>
           <Heading
-              as="h3"
-              size="sm"
-              alignSelf="flex-start"
-              m={0}
-              textAlign="left"
-              maxWidth={"50vw"}
-            >
-              WBS Coding School Bootcamp
-            </Heading>
+            as="h3"
+            size="sm"
+            alignSelf="flex-start"
+            m={0}
+            maxWidth="500px"
+            textAlign="left"
+          >
+            WBS Coding School Bootcamp
+          </Heading>
           <Text
             fontSize="md"
             alignSelf="flex-start"
             margin={0}
+            maxWidth={"50vw"}              
             textAlign="left"
-            maxWidth={"50vw"}
-            flexWrap={"wrap"}
-
-           
-
           >
             Acquired Skills:
-            Responsive Web Design - Frontend Programming with JavaScript/React - Backend Programming with Node.js/Express - Version Control Systems (Git & GitHub) - Databases (SQL, NoSQL) - Restful APIs - Unit Testing, Agile Tools and Methodologies
           </Text>
-     
+          <UnorderedList
+            fontSize="md"
+            alignSelf="flex-start"
+            m={0}
+            display={"flex"}
+            flexDirection={"column"}
+            maxWidth={"50vw"}
+            justifyContent={"flex-start"}
+            flexWrap={"wrap"}
+            textAlign="left"
+            borderLeft={"1px solid"}
+            borderColor={"gray.300"}
+            paddingLeft="14px"
+          >
+            <ListItem>HTML5, CSS3 and Responsive Web Design</ListItem>
+            <ListItem>Frontend Programming with JavaScript/React</ListItem>
+            <ListItem>Backend Programming with Node.js/Express</ListItem>
+            <ListItem>Version Control Systems (Git & GitHub)</ListItem>
+            <ListItem>Databases (SQL, NoSQL)</ListItem>
+            <ListItem>Restful APIs</ListItem>
+            <ListItem>Unit Testing</ListItem>
+            <ListItem>Agile Tools and Methodologies</ListItem>
+          </UnorderedList>
+
       
         </Box>
       </Box>
     </Flex>
   </Box>
-
-
 
 
 

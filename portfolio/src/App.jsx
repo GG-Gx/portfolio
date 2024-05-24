@@ -18,6 +18,8 @@ import {
 
 } from "react-router-dom";
 
+import Navbarsmall from './components/Navbarsmall'
+
 import './App.css'
 
 
@@ -27,6 +29,7 @@ function App() {
   return (
     <>
     <Navbar />
+    <Navbarsmall />
     <Header />
     <Experience />
     <Projects />

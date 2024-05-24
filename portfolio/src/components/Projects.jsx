@@ -34,6 +34,8 @@ const Projects = () => {
             alignItems="center"
             marginBottom={4}
             gap={3}
+            paddingTop={2}
+
           >
             <Image
               src="/code.svg"
@@ -42,6 +44,7 @@ const Projects = () => {
               alt="Code"
               marginTop={1}
               padding={1}
+
             />
             Projects
           </Heading>
@@ -54,7 +57,8 @@ const Projects = () => {
             <Image
               src="/tuneGather - Google Chrome 23_05_2024 14_51_13.png"
               width="300px"
-              height="200px"
+              maxWidth={"70vw"}
+              height="auto"
               objectFit="cover"
               alt="project"
               borderRadius={23}
@@ -83,19 +87,53 @@ const Projects = () => {
               A user-friendly calendar system designed for booking freelance music teachers. Whether you're a student looking to enhance your musical skills or a teacher eager to share your expertise, tuneGather simplifies the scheduling process, allowing seamless booking of music lessons.
             </Text>
             <Box
-              display="flex"
-              flexDirection="row"
-              justifyContent="flex-start"
-              alignItems="center"
+              display='flex'
+              alignSelf={"flex-start"}
               gap={3}
-              marginTop="3%"
+              flexWrap={"wrap"}
+              flexDirection={"row"}
+              justifyContent={"left"}
+              alignItems={"center"}
+              maxWidth={"70vw"}
+              marginTop={3}
+
             >
-              <Link href="https://github.com/GG-Gx/final-project" isExternal>
-                <Button borderRadius={23} colorScheme="orange" height="30px">Code</Button>
-              </Link>
-              <Link href="https://admirable-halva-1c9c04.netlify.app/" isExternal>
-                <Button borderRadius={26} colorScheme="orange" height="30px">Preview</Button>
-              </Link>
+                <Button borderRadius={23} colorScheme="orange" height="30px"
+                onClick={() => window.open("https://github.com/GG-Gx/final-project")}
+                >
+                      <Image
+                      src=".\brand-github.svg" 
+                      boxSize="15px"
+                      objectFit="cover"
+                      alt="Linkedin"
+                      marginRight={1}
+                      justifyContent={"center"}
+                      alignSelf={"center"}
+                      alignContent={"center"}
+                      className="svg-icon-header"
+                      />
+                  Code</Button>
+
+              
+              
+                <Button borderRadius={26} colorScheme="orange" height="30px"
+                onClick={() => window.open("https://admirable-halva-1c9c04.netlify.app/")}
+                >
+                                              <Image
+                      src=".\link.svg" 
+                      boxSize="15px"
+                      objectFit="cover"
+                      alt="Linkedin"
+                      marginRight={1}
+                      justifyContent={"center"}
+                      alignSelf={"center"}
+                      alignContent={"center"}
+                      className="svg-icon-header"
+
+                      />
+                  
+                  Preview</Button>
+              
             </Box>
           </Box>
         </Box>

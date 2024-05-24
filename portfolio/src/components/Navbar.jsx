@@ -40,6 +40,7 @@ const Navbar = () => {
 
     <Center
     paddingTop={2}
+
    
    
     >
@@ -52,6 +53,7 @@ const Navbar = () => {
     width={"100%"}
     zIndex={10}
     flexWrap={"wrap"}
+    className="navbar"
   
 
     >
@@ -82,6 +84,8 @@ const Navbar = () => {
         borderRadius={23}
         bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "transparent"}
         backdropFilter={isScrolled ? "blur(15px)" : "none"} // Apply backdrop blur on scroll
+        className="navbar"
+
         >
           <Link href="#experience"
            onClick={(e) => handleSmoothScroll("experience", e)}

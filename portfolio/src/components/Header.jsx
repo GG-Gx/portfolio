@@ -44,6 +44,8 @@ const Header = () => {
        >
         <Box
         display={"flex"}
+        flexWrap={"wrap"}
+        maxW={"70vw"}
         flexDirection={"row"}
         justifyContent={"center"}
         alignItems={"center"}
@@ -99,8 +101,13 @@ const Header = () => {
           <Heading as="h1" 
           size={"xl"}
           alignSelf={"flex-start"}
+          margin={0}
+          justifyContent={"left"}
+          alignItems={"left"}
           gap={3}
           maxWidth={"50vw"}
+          textAlign={"left"}
+          wordBreak={"keep-all"}
           >Hello,  I'm Germán</Heading>
           <Text fontSize="md"
           alignSelf={"flex-start"}
@@ -111,18 +118,26 @@ const Header = () => {
           >Enthusiastic junior web developer with a passion for creating dynamic and responsive web applications. Recently completed an intensive bootcamp focused on full-stack development, where I built a comprehensive final project using the MERN stack (MongoDB, Express.js, React, Node.js). Eager to bring my skills in JavaScript, React, and Node.js to a growing tech team.</Text>
           </Box>
           <Spacer />
+
           <Box
           display='flex'
           alignSelf={"flex-start"}
           gap={3}
+          flexWrap={"wrap"}
+          flexDirection={"row"}
+          justifyContent={"left"}
+          alignItems={"center"}
+          maxWidth={"70vw"}
+
           >
          
           <Button
             colorScheme="purple"
             variant="outline"
             borderRadius={23}
-            height="35px"
+            height="30px"
             onClick={handleMailTo}
+            
           >
           <Image
           src=".\public\mail-forward.svg" 
@@ -135,15 +150,14 @@ const Header = () => {
           alignContent={"center"}
           className="svg-icon-header"
           />
-          Contact me
+          Contact
           
           </Button>
-          <Spacer />
 
         
           <Button colorScheme="purple" variant="outline"
           borderRadius={23}
-          height='35px'
+          height='30px'
           onClick={() => window.open("https://www.linkedin.com/in/german-gabriel-garcia-400515119/")}
           >
             <Image

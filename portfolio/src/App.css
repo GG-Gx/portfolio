@@ -28,11 +28,40 @@
   #root {
     background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
     background-size: cover;
-    justify-content: center !important;
-    
-    
+    padding: auto;
+  }
+  #root .css-1pez730 {
+    margin-left: 0 !important; /* Adjust margin as needed */
   }
 }
+
+@media (max-width: 320px) {
+  .navbar {
+    display: none !important;}
+}
+
+@media (min-width: 320px) {
+  .navbarsmall {
+    display: none !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbarsmall {
+    display: inline !important;
+    align-items: flex-end !important; /* Align items to the bottom */
+    gap: 1rem !important;
+    flex-direction: column !important;
+    position: fixed; /* Position the navbar */
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+    margin: .5rem; /* Add some margin */
+      
+  }
+}
+
+
+
 
 
 
@@ -46,6 +75,21 @@ html {
 
 
 }
+
+
+.css-1pez730 {
+
+
+  align-items: flex-start !important; /* Align content to the left */
+  gap: 1rem !important; /* Add space between the items */
+  flex-direction: column !important; /* Stack the items vertically */
+  margin-inline-start: 0 !important; /* Remove the default margin */
+  margin-inline-end: 0 !important; /* Remove the default margin */
+  margin-left: 23% !important;
+
+}
+
+
 
 
 
@@ -96,13 +140,17 @@ html {
 /* Text */
 .fancy-text {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   color: #1a1919;
   font-weight: 100;
   font-size: 2rem;
   padding: 1rem;
   border-radius: 50px;
 
+}
+
+.svg-icon-header {
+  stroke: white;
 }
 
 
@@ -116,6 +164,9 @@ html {
       transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
   }
 }
+
+
+
 
 
 
