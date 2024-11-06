@@ -100,8 +100,9 @@ const Experience = () => {
             flexWrap={"wrap"}
             textAlign="left"
             borderLeft={"1px solid"}
-            borderColor={"gray.300"}
-            paddingLeft="14px"
+            borderColor="gray.300"
+            paddingLeft="12.5px"  // Adjusted padding to align with the border
+            listStylePosition="outside"  // Ensures bullets are inside the padding area          
           >
             <ListItem>HTML5, CSS3 and Responsive Web Design</ListItem>
             <ListItem>Frontend Programming with JavaScript/React</ListItem>
