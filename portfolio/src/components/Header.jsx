@@ -81,7 +81,7 @@ const Header = () => {
         color={"black"}
         justifyContent={"center"}
         alignSelf={"center"}
-        onClick={() => window.open("www.linkedin.com/in/german-g-g")}
+        onClick={() => window.open("https://www.linkedin.com/in/german-g-g/")}
         >
         open to work
         </Button>
@@ -158,7 +158,7 @@ const Header = () => {
           <Button colorScheme="purple" variant="outline"
           borderRadius={23}
           height='30px'
-          onClick={() => window.open("www.linkedin.com/in/german-g-g")}
+          onClick={() => window.open("https://www.linkedin.com/in/german-g-g/")}
           >
             <Image
           src=".\brand-linkedin.svg" 
