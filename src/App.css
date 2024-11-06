@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+
+
+#root {
+  margin: 0 auto;
+  color: #fa0000;
+  font-weight: 300;
+  font-family: 'Reddit Mono', monospace;
+  padding: 2rem;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  font-display: swap;
+
+
+}
+
+/* Default styles for larger screens */
+#root {
+  background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
+  background-size: cover;
+}
+
+/* Default styles for smaller screens */
+@media (max-width: 600px) {
+  #root {
+    background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
+    background-size: cover;
+    padding: auto;
+  }
+  #root .css-1pez730 {
+    margin-left: 0 !important; /* Adjust margin as needed */
+  }
+}
+
+@media (max-width: 320px) {
+  .navbar {
+    display: none !important;}
+}
+
+@media (min-width: 320px) {
+  .navbarsmall {
+    display: none !important;
+  }
+}
+
+@media (max-width: 321px) {
+  .navbarsmall {
+    display: inline !important;
+    align-items: flex-end !important; /* Align items to the bottom */
+    gap: 1rem !important;
+    flex-direction: column !important;
+    position: fixed; /* Position the navbar */
+    top: 0; /* Position it at the top */
+    right: 0; /* Position it at the right */
+    margin: .5rem; /* Add some margin */
+      
+  }
+}
+
+
+
+
+
+
+html {
+  width: 100%;
+  height: 100%;
+  margin:  0 auto;
+  padding: 0;
+  background-size: cover;
+  background-repeat: none;
+
+
+}
+
+
+.css-1pez730 {
+
+
+  align-items: flex-start !important; /* Align content to the left */
+  gap: 1rem !important; /* Add space between the items */
+  flex-direction: column !important; /* Stack the items vertically */
+  margin-inline-start: 0 !important; /* Remove the default margin */
+  margin-inline-end: 0 !important; /* Remove the default margin */
+  margin-left: 23% !important;
+
+}
+
+
+
+
+
+.fancy {
+  padding: 1px;
+  border-radius: 23px;
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;
+  color: #1a1919;
+  font-size: 2rem;
+  font-weight: 100;
+  background: #fff;
+}
+
+.css-y8uql7 {
+  font-weight: 200 !important;
+  font-size: 2rem;
+  color: #1a1919;
+  border-radius: 50px;
+  padding: 1rem;
+  background: #fff;
+}
+
+
+/* Conic gradient */
+.fancy::before { 
+  content: '';
+  background: conic-gradient(transparent 270deg, rgb(6, 230, 36), transparent);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  aspect-ratio: 1;
+  width: 100%;
+  animation: rotate 5s linear infinite;
+}
+
+/* Overlay */
+.fancy::after {
+  content: '';
+  position: absolute;
+  inset: var(--offset);
+  height: calc(100% - 2 * var(--offset));
+  width: calc(100% - 2 * var(--offset));
+}
+
+/* Text */
+.fancy-text {
+  position: relative;
+  z-index: 1;
+  color: #1a1919;
+  font-weight: 100;
+  font-size: 2rem;
+  padding: 1rem;
+  border-radius: 50px;
+
+}
+
+.svg-icon-header {
+  stroke: white;
+}
+
+
+
+@keyframes rotate {
+  from {
+      transform: translate(-50%, -50%) scale(1.4) rotate(0turn);
+  }
+
+  to {
+      transform: translate(-50%, -50%) scale(1.4) rotate(1turn);
+  }
+}
+
+
+
+
+
+
+
+/* Path: portfolio/src/App.js */
+
+
+
+
+
+
