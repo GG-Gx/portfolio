@@ -84,7 +84,7 @@ const Navbarsmall = () => {
                 color='red'
                 bg={isScrolled ? "rgba(209, 209, 209, 0.1)" : "transparent"}
                 backdropFilter={isScrolled ? "blur(15px)" : "none"}
-                isOpen={true}
+                
               />
               <MenuList
                 backdropFilter = "blur(15px)"
