@@ -18,6 +18,13 @@ const projectData = [
     codeLink: "https://github.com/GG-Gx/ip_react",
     previewLink: "https://ipreactggg.netlify.app/"
   },
+  {
+    id: 3,
+    title: "Pokedex Fight Club",
+    description: "A React app where users can explore Pokémon, choose their favorites, and watch them battle. Featuring basic stats and animations, it’s a fun way to bring Pokémon encounters to the screen.",
+    imageSrc: "/pokedex.png",
+    codeLink: "https://github.com/GG-Gx/PokeFight",
+    previewLink: "https://poke-fight-ggg.netlify.app/"}
 ];
 
 const ProjectCard = ({ project }) => {
