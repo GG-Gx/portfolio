@@ -28,25 +28,27 @@
   #root {
     background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
     background-size: cover;
-    padding: auto;
+
   }
   #root .css-1pez730 {
-    margin-left: 0 !important; /* Adjust margin as needed */
+    margin-left: 0!important; /* Adjust margin as needed */
+    
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 325px) {
   .navbar {
     display: none !important;}
+  
 }
 
-@media (min-width: 320px) {
+@media (min-width: 325px) {
   .navbarsmall {
     display: none !important;
   }
 }
 
-@media (max-width: 321px) {
+@media (max-width: 325px) {
   .navbarsmall {
     display: inline !important;
     align-items: flex-end !important; /* Align items to the bottom */
@@ -56,7 +58,14 @@
     top: 0; /* Position it at the top */
     right: 0; /* Position it at the right */
     margin: .5rem; /* Add some margin */
-      
+  }
+  #root {
+  margin: 0 auto;
+  }
+  .projectcards {
+    margin-left: 0 auto;
+    margin-right: 0 ;
+    margin-top: 0;
   }
 }
 

@@ -81,7 +81,7 @@ const About = () => {
               fontSize="md"
               alignSelf="flex-start"
               margin={0}
-              maxWidth={"50vw"}              textAlign="left"
+              maxWidth={"70vw"}           textAlign="left"
               marginTop={5}
             >
               My name is Germán Gabriel García, and I am originally from Argentina but currently residing in Berlin. As a musician, I developed a solo project that combines trumpet performance with audio processing and generative audio-reactive visuals, requiring extensive programming skills.

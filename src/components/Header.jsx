@@ -17,17 +17,12 @@ const Header = () => {
 
   return (
 
-
- 
-
-    
     <Box  p={4}
     display="flex"
     flexDirection={"column"}
     justifyContent="center"
     id="header"
     pt = {{ base: "10%", md: "8%" }}
-
 
   
     >
@@ -112,7 +107,7 @@ const Header = () => {
           <Text fontSize="md"
           alignSelf={"flex-start"}
           margin={0}
-          maxWidth={"50vw"}
+          maxWidth={"75vw"}
           textAlign={"left"}
           
           >Enthusiastic junior web developer with a passion for creating dynamic and responsive web applications. Recently completed an intensive bootcamp focused on full-stack development, where I built a comprehensive final project using the MERN stack (MongoDB, Express.js, React, Node.js). Eager to bring my skills in JavaScript, React, and Node.js to a growing tech team.</Text>

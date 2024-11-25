@@ -5,14 +5,13 @@ const Experience = () => {
   return (
     
     <Box
-    p={4}
-
     display="flex"
     flexWrap={"wrap"}
     flexDirection="column"
     alignItems="flex-start"
-    pt="8%"
     id="experience"
+    pt="8%"
+    p={4}
   >
     <Flex
       minWidth="max-content"

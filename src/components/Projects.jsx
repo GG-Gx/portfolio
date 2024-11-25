@@ -30,18 +30,18 @@ const projectData = [
 const ProjectCard = ({ project }) => {
  
   return (
-    <Box key={project.id} pl={5} ml={5} mb={8}>
+    <Box key={project.id} pl={5} ml={5} mb={8} id="projectcards">
       <Image
         src={project.imageSrc}
         fallbackSrc="/fallback-image.png" // Show fallback if the image fails to load
         width="300px"
-        maxWidth="70vw"
+        maxWidth="60vw"
         height="auto"
         objectFit="cover"
         alt={project.title}
         borderRadius={23}
         _hover={{
-          transform: 'scale(1.02)',
+          transform: 'scale(1.04)',
           transition: 'transform 1s ease-in-out',
         }}
         transition="transform 0.5s ease-in-out"
@@ -60,7 +60,7 @@ const ProjectCard = ({ project }) => {
         fontSize="md"
         alignSelf="flex-start"
         margin={0}
-        maxWidth="50vw"
+        maxWidth="60vw"
         textAlign="left"
       >
         {project.description}
