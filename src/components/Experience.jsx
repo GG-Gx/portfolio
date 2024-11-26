@@ -10,8 +10,10 @@ const Experience = () => {
     flexDirection="column"
     alignItems="flex-start"
     id="experience"
-    pt="8%"
-    p={4}
+    paddingTop={10}
+    pl={5} 
+    ml={5}
+    mb={8}
   >
     <Flex
       minWidth="max-content"

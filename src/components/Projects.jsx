@@ -30,7 +30,11 @@ const projectData = [
 const ProjectCard = ({ project }) => {
  
   return (
-    <Box key={project.id} pl={5} ml={5} mb={8} id="projectcards">
+    <Box key={project.id}     paddingTop={10}
+    pl={5} 
+    ml={5}
+    mb={8} 
+    id="projectcards">
       <Image
         src={project.imageSrc}
         fallbackSrc="/fallback-image.png" // Show fallback if the image fails to load
@@ -120,7 +124,8 @@ const ProjectCard = ({ project }) => {
 const Projects = () => {
   return (
     <Box
-      p={4}
+    paddingTop={10}
+
       display="flex"
       flexDirection="column"
       alignItems="flex-start"
