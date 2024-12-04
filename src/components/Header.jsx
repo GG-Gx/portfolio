@@ -111,7 +111,7 @@ const Header = () => {
           justifyContent={"left"}
           alignItems={"left"}
           gap={3}
-          maxWidth={"50vw"}
+          maxWidth={"70vw"}
           textAlign={"left"}
           wordBreak={"keep-all"}
           >{text}
