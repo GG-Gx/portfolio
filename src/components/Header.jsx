@@ -3,6 +3,8 @@ import { Box, Flex, Spacer, Text, Heading, Img, Button} from "@chakra-ui/react";
 import { Link } from "@chakra-ui/react";
 import { Image } from "@chakra-ui/react";
 import { ReactSVG } from 'react-svg';
+import { useTypewriter, Cursor} from 'react-simple-typewriter'
+
 
 
 
@@ -13,6 +15,10 @@ const Header = () => {
     window.location.href = "mailto:garciagermangabriel@gmail.com";
   };
 
+  const [text] = useTypewriter({
+    words: ['Hi! I am Germán,'],
+  
+})
 
 
   return (
@@ -108,14 +114,17 @@ const Header = () => {
           maxWidth={"50vw"}
           textAlign={"left"}
           wordBreak={"keep-all"}
-          >Hello,  I'm Germán</Heading>
+          >{text}
+          <Cursor cursorColor='red' />
+         
+          </Heading>
           <Text fontSize="md"
           alignSelf={"flex-start"}
           margin={0}
           maxWidth={"60vw"}
           textAlign={"left"}
           
-          >Enthusiastic junior web developer with a passion for creating dynamic and responsive web applications. Recently completed an intensive bootcamp focused on full-stack development, where I built a comprehensive final project using the MERN stack (MongoDB, Express.js, React, Node.js). Eager to bring my skills in JavaScript, React, and Node.js to a growing tech team.</Text>
+          >I’m an enthusiastic Junior Web Developer passionate about crafting dynamic, responsive web applications. With a strong foundation in the MERN stack (MongoDB, Express.js, React, Node.js), I honed my skills through an intensive bootcamp and freelance projects, including developing full-stack solutions tailored to client needs. I bring expertise in JavaScript, React, and Node.js, combined with creativity and attention to detail, ready to contribute to a forward-thinking tech team.</Text>
           </Box>
           <Spacer />
 
