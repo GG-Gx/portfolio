@@ -24,7 +24,16 @@ const projectData = [
     description: "A React app where users can explore Pokémon, choose their favorites, and watch them battle. Featuring basic stats and animations, it’s a fun way to bring Pokémon encounters to the screen.",
     imageSrc: "/pokedex.png",
     codeLink: "https://github.com/GG-Gx/PokeFight",
-    previewLink: "https://poke-fight-ggg.netlify.app/"}
+    previewLink: "https://poke-fight-ggg.netlify.app/"},
+  {
+    id: 4,
+    title: "To-Do List",
+    description: "A simple to-do list app created with React. Users can add, delete, and mark tasks as complete. This project was created to practice React state management.",
+    imageSrc: "/todo.png",
+    codeLink: "https://github.com/GG-Gx/to-do-list-react",
+    previewLink: "https://to-do-list-ggg.netlify.app/",
+  },
+
 ];
 
 const ProjectCard = ({ project }) => {
