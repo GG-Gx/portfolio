@@ -13,23 +13,34 @@
   max-width: 100%;
   overflow: hidden;
   font-display: swap;
+  position: relative;
 
 
 }
 
 /* Default styles for larger screens */
+
+
 #root {
-  background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
+  background: 
+  radial-gradient(100% 125% at 50% 10%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 105, 180, 0.3) 60%, rgba(163, 117, 247, 0.9) 100%);
+ 
+  /* filter: contrast(140%) brightness(100%); */
+
+  
+
+  
+
+ /* background: 
+    radial-gradient(100% 125% at 50% 10%, rgba(255, 255, 255, 0.8) 20%, rgba(163, 117, 247, 0.8) 100%); */
   background-size: cover;
+  /*url('public/noise-background.svg')*/
+  
 }
 
 /* Default styles for smaller screens */
 @media (max-width: 600px) {
-  #root {
-    background-image: radial-gradient(100% 125% at 50% 10%, #fff 20%, rgb(163, 117, 247) 100%);
-    background-size: cover;
-
-  }
+ 
   #root .css-1pez730 {
     margin-left: 0!important; /* Adjust margin as needed */
     
