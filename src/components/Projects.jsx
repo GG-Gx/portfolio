@@ -12,11 +12,11 @@ const projectData = [
   },
   {
     id: 2,
-    title: "What is my IP",
-    description: "A simple React app that displays the user's IP address. This app was created to practice fetching data from an API and displaying it on a webpage.",
-    imageSrc: "/whatismyip.png",
-    codeLink: "https://github.com/GG-Gx/ip_react",
-    previewLink: "https://ipreactggg.netlify.app/"
+    title: "Ticket App",
+    description: "This app served as a hands-on exercise to enhance my skills with Next.js. It functions as a straightforward ticketing solution, enabling users to effortlessly generate and oversee tickets for various events.",
+    imageSrc: "/ticketing-app.png",
+    codeLink: "https://github.com/GG-Gx/ticket-app",
+    previewLink: "https://ticket-app-eta.vercel.app/"
   },
   {
     id: 3,
